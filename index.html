@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quote App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer src="main.js"></script>
 </head>
 <body>
     <main class="main">
-
         <section class="container1">
             <div class="current_day">
                 <p class="div_p">Today Is:</p>
@@ -18,13 +18,17 @@
                 </h2>
             </div>
         </section>
-        <section class="container2">
+        <section class="container1">
             <div class="quote_box">
                 <h2 >Quote Of The Day</h2>
-                <blockquote id="quote">Loading...</blockquote>
-                <span id="author">Loading...</span>
+                <blockquote id="quote">loading...</blockquote>
+                <span id="author">loading</span>
                 <div class="btn">
-                    <button onclick="getquote(api_url)">New Quote</button>
+                    <div class="i">
+                        <i id="volume" class="fa fa-volume-up" aria-hidden="true"></i>
+                        <i id="copy" class="fa fa-copy" aria-hidden="true"></i>
+                    </div>
+                    <button id="button">New Quote</button>
                 </div>
             </div>
         </section>
